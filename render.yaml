@@ -4,31 +4,32 @@ services:
     env: node
     region: oregon
     plan: starter
-    buildCommand: npm install
+    buildCommand: npm install n8n@latest
     startCommand: npm start
     envVars:
       - key: N8N_HOST
         sync: false
       - key: N8N_PORT
-        value: 10000
+        value: "10000"
       - key: N8N_PROTOCOL
-        value: https
-      - key: VUE_APP_URL_BASE_API
+        value: "https"
+      - key: N8N_EDITOR_BASE_URL
         sync: false
       - key: WEBHOOK_URL
         sync: false
       - key: GENERIC_TIMEZONE
-        value: America/New_York
+        value: "America/New_York"
       - key: N8N_BASIC_AUTH_ACTIVE
-        value: true
+        value: "true"
       - key: N8N_BASIC_AUTH_USER
         sync: false
       - key: N8N_BASIC_AUTH_PASSWORD
         sync: false
       - key: N8N_ENCRYPTION_KEY
         generateValue: true
+      # PostgreSQL DB config
       - key: DB_TYPE
-        value: postgresdb
+        value: "postgresdb"
       - key: DB_POSTGRESDB_HOST
         fromDatabase:
           name: n8n-db

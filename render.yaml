@@ -53,4 +53,4 @@ services:
 databases:
   - name: n8n-db
     databaseName: n8n
-    plan: starter
+    plan: free

@@ -149,7 +149,7 @@ To upgrade to the latest n8n version:
 1. Update the version in `package.json`:
    ```json
    "dependencies": {
-     "n8n": "^1.XX.0"
+     "n8n": "^1.70.0"
    }
    ```
 

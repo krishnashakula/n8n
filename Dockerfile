@@ -1,7 +1,7 @@
 # Optional Dockerfile for n8n deployment
 # Use this if you prefer Docker-based deployment on Render
 
-FROM node:18-alpine
+FROM node:22-alpine
 
 # Install n8n globally
 RUN npm install -g n8n
